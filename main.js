@@ -416,6 +416,9 @@ function createSchedules() {
                 adapter.log.debug('We need to create a Schedule for Doorbell ID: ' + key);
                 array.push({ "event": "http", "param": favoriteState[key]['ID'], "enabled": "1", "schedule": { "weekdays": [{ "from": "79200", "to": "79199" }] } });
                 toCreate = { "input": "doorbell", "param": key, "output": array };
+                adapter.log.debug('TEST action create ----!!!!');
+                adapter.log.debug(scheduleState[key]);
+                adapter.log.debug(toCreate);
                 request({
                     url: buildURL('schedule'),
                     method: "POST",
