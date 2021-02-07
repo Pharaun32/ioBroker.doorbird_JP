@@ -4,7 +4,7 @@
         "version": "0.1.6",
         "news": {
             "0.1.6": {
-                "de": "Test"
+                "de": "Anpassung des Error State zu Debug bei der schedule funktion. Problem bei weiteren HTTP-Aufrufen damit ausgeblendet"
             },
             "0.1.5": {
                 "en": "Just some changes under the hood",
