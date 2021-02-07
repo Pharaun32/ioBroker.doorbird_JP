@@ -312,7 +312,9 @@ function getSchedules() {
                     bellCount = 0;
                     doorbellsArray = [];
                     adapter.log.debug('Looping trough the Schedules..');
+                    adapter.log.debug('Test :');
                     for (var i = 0; i < schedules.length; i++) {
+                        adapter.log.debug(schedules[i].input);
                         if (schedules[i].input === "doorbell") {
                             bellCount++;
                             adapter.log.debug('Detected a Doorbell Schedule!');
