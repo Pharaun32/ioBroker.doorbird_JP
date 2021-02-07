@@ -428,8 +428,8 @@ function createSchedules() {
                     if (!error && response.statusCode === 200) {
                         adapter.log.debug('Schedule created successful!');
                     } else {
-                        adapter.log.error('There was an Error while creating the schedule..');
-                        adapter.log.error(error + ' ' + response.statusCode);
+                        adapter.log.debug('There was an Error while creating the schedule..');
+                        adapter.log.debug(error + ' ' + response.statusCode);
                     }
                 });
             } else {
